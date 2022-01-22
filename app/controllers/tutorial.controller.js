@@ -19,7 +19,7 @@ exports.create = (req, res) => {
 // Retrieve all Tutorials from the database.
 exports.findAll = (req, res) => {
     return Tutorial.findAll({}).then(data => {
-        return ras.json(data);
+        return res.json(data);
     });
 
 };
